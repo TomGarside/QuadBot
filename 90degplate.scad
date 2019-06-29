@@ -1,5 +1,14 @@
 
+// 90 degree mountplate fpr quad robot 1 per leg 
+// Thomas Garside 2019 
 
-linear_extrude(height =30){
-polygon(points=[[0,0],[15,0],[15,5],[5,5],[5,15],[0,15]]);
+plateLen=30;
+ 
+linear_extrude(height =plateLen){
+polygon(points=[[0,0],
+                [plateLen/2,0],
+                [plateLen/2,plateLen/6],
+                [plateLen/6,plateLen/6],  
+                [plateLen/6,plateLen/2],
+                [0,plateLen/2]]);
 }
